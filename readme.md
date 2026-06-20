@@ -18,7 +18,7 @@ Each image is available via a direct link:
 
 ### 📄 Info about maps
 
-File `maps.json` содержит полную информацию о каждой карте и её курсах. Он доступен по ссылке:
+File `maps.json` contains full information about each map and its courses. It is available at the following link:
 
 - [https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps.json](https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps.json)
 
