@@ -2,19 +2,15 @@
 
 Each image is available via a direct link:
 
-- **Main** (`courseid = 1`):  
-  `https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/{mapname}.jpg`
+- **Main**: `https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/{mapname}.jpg`
 
-- **Bonus** (`courseid > 1`):  
-  `https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/{mapname}_{courseid}.jpg`
+- **Bonus**: `https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/{mapname}_{courseid}.jpg`
 
 ### Examples
 
-- `kz_devon`, Main:  
-  [https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon.jpg](https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon.jpg)
+- `kz_devon`, Main: [https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon.jpg](https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon.jpg)
 
-- `kz_devon`, Cursed Path:  
-  [https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon_2.jpg](https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon_2.jpg)
+- `kz_devon`, Cursed Path: [https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon_2.jpg](https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_devon_2.jpg)
 
 ### 📄 Info about maps
 
