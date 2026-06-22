@@ -246,7 +246,7 @@
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3636272568",
-    "ckznubtier": 7,
+    "ckznubtier": 6,
     "ckzprotier": 0,
     "vnlnubtier": 10,
     "vnlprotier": 10,
@@ -830,9 +830,9 @@
     "courseid": 1,
     "workshopid": "3734077455",
     "ckznubtier": 1,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 2,
+    "vnlnubtier": 1,
+    "vnlprotier": 2,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cherry.jpg"
   },
   {
@@ -2084,7 +2084,7 @@
     "courseid": 1,
     "workshopid": "3100988369",
     "ckznubtier": 5,
-    "ckzprotier": 0,
+    "ckzprotier": 6,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_isuper.jpg"
@@ -3470,9 +3470,9 @@
     "courseid": 1,
     "workshopid": "3688727257",
     "ckznubtier": 5,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 7,
+    "vnlnubtier": 8,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks.jpg"
   },
   {
@@ -3480,10 +3480,10 @@
     "coursename": "VNL Drops",
     "courseid": 2,
     "workshopid": "3688727257",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckznubtier": 2,
+    "ckzprotier": 2,
+    "vnlnubtier": 8,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_2.jpg"
   },
   {
@@ -3491,10 +3491,10 @@
     "coursename": "VNL Wallstrafe",
     "courseid": 3,
     "workshopid": "3688727257",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckznubtier": 2,
+    "ckzprotier": 2,
+    "vnlnubtier": 6,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_3.jpg"
   },
   {
@@ -3502,9 +3502,9 @@
     "coursename": "VNL Longjump Blocks",
     "courseid": 4,
     "workshopid": "3688727257",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
-    "vnlnubtier": 8,
+    "ckznubtier": 2,
+    "ckzprotier": 2,
+    "vnlnubtier": 6,
     "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_4.jpg"
   },
@@ -3535,10 +3535,10 @@
     "coursename": "CKZ Wallstrafe",
     "courseid": 7,
     "workshopid": "3688727257",
-    "ckznubtier": 7,
-    "ckzprotier": 7,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckznubtier": 8,
+    "ckzprotier": 8,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_7.jpg"
   },
   {
@@ -3548,8 +3548,8 @@
     "workshopid": "3688727257",
     "ckznubtier": 8,
     "ckzprotier": 8,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_8.jpg"
   },
   {
@@ -3557,10 +3557,10 @@
     "coursename": "bkz_watermelon",
     "courseid": 9,
     "workshopid": "3688727257",
-    "ckznubtier": 5,
-    "ckzprotier": 5,
-    "vnlnubtier": 9,
-    "vnlprotier": 9,
+    "ckznubtier": 3,
+    "ckzprotier": 3,
+    "vnlnubtier": 8,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_9.jpg"
   },
   {
@@ -3568,10 +3568,10 @@
     "coursename": "Two hundred seventy-three",
     "courseid": 10,
     "workshopid": "3688727257",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
-    "vnlnubtier": 5,
-    "vnlprotier": 5,
+    "ckznubtier": 4,
+    "ckzprotier": 4,
+    "vnlnubtier": 8,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_10.jpg"
   },
   {
@@ -3592,8 +3592,8 @@
     "workshopid": "3688727257",
     "ckznubtier": 4,
     "ckzprotier": 4,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 7,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_opticks_12.jpg"
   },
   {
@@ -3767,9 +3767,9 @@
     "courseid": 1,
     "workshopid": "3733523067",
     "ckznubtier": 1,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 2,
+    "vnlnubtier": 2,
+    "vnlprotier": 2,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_porn.jpg"
   },
   {
@@ -4312,17 +4312,6 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_silly_metamodernity_4.jpg"
   },
   {
-    "mapname": "kz_sillybhop_wake",
-    "coursename": "Main",
-    "courseid": 1,
-    "workshopid": "3736034501",
-    "ckznubtier": 0,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_sillybhop_wake.jpg"
-  },
-  {
     "mapname": "kz_sillychicken",
     "coursename": "main",
     "courseid": 1,
@@ -4444,15 +4433,15 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_slide_deee.jpg"
   },
   {
-    "mapname": "kz_slide_desolate",
+    "mapname": "kz_slide_agave",
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3735580891",
     "ckznubtier": 7,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_slide_desolate.jpg"
+    "ckzprotier": 9,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_slide_agave.jpg"
   },
   {
     "mapname": "kz_slide_dydanhomon",
@@ -4823,7 +4812,7 @@
     "courseid": 1,
     "workshopid": "3370381464",
     "ckznubtier": 5,
-    "ckzprotier": 0,
+    "ckzprotier": 6,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_sxb2_onlyslide.jpg"
@@ -4833,8 +4822,8 @@
     "coursename": "Bonus1",
     "courseid": 2,
     "workshopid": "3370381464",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
+    "ckznubtier": 4,
+    "ckzprotier": 4,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_sxb2_onlyslide_2.jpg"
