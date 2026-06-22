@@ -275,6 +275,17 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_angina_3.jpg"
   },
   {
+    "mapname": "kz_angina_x",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3746453872",
+    "ckznubtier": 7,
+    "ckzprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_angina_x.jpg"
+  },
+  {
     "mapname": "kz_antharas",
     "coursename": "Main",
     "courseid": 1,
@@ -2633,7 +2644,7 @@
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3746027600",
-    "ckznubtier": 0,
+    "ckznubtier": 2,
     "ckzprotier": 0,
     "vnlnubtier": 0,
     "vnlprotier": 0,
@@ -3249,7 +3260,7 @@
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3745801456",
-    "ckznubtier": 0,
+    "ckznubtier": 1,
     "ckzprotier": 0,
     "vnlnubtier": 0,
     "vnlprotier": 0,
