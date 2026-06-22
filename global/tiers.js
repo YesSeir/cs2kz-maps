@@ -9,7 +9,6 @@ const __dirname = path.dirname(__filename);
 const MAPS_JSON_PATH = path.resolve(__dirname, '../maps.json');
 const API_URL = 'https://api.cs2kz.org/maps';
 
-// Таблица соответствия текстовых значений тиров в числа
 const TIER_MAP = {
   'very-easy': 1,
   'easy': 2,
@@ -23,7 +22,6 @@ const TIER_MAP = {
   'impossible': 10,
 };
 
-// Преобразование строки в число, если не найдено – возвращаем 0 (или можно оставить как есть)
 function parseTier(str) {
   if (!str) return 0;
   const normalized = str.toLowerCase().trim();
@@ -36,7 +34,6 @@ async function fetchMapsFromAPI() {
     throw new Error(`API request failed: ${response.status} ${response.statusText}`);
   }
   const data = await response.json();
-  // data = { total, values: [...] }
   return data.values;
 }
 
@@ -63,14 +60,12 @@ function updateTiers(mapsJson, mapIndex) {
     const { mapname, coursename } = entry;
     const courseMap = mapIndex.get(mapname);
     if (!courseMap) {
-      // Карта не найдена в API – оставляем без изменений
       updated.push(entry);
       continue;
     }
 
     const course = courseMap.get(coursename);
     if (!course) {
-      // Курс не найден – оставляем без изменений
       updated.push(entry);
       continue;
     }
@@ -84,7 +79,6 @@ function updateTiers(mapsJson, mapIndex) {
     const newVnlNub = parseTier(vanilla.nub_tier);
     const newVnlPro = parseTier(vanilla.pro_tier);
 
-    // Проверяем, изменились ли значения
     const oldCkzNub = entry.ckznubtier ?? 0;
     const oldCkzPro = entry.ckzprotier ?? 0;
     const oldVnlNub = entry.vnlnubtier ?? 0;
