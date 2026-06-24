@@ -991,7 +991,7 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "BlueFootChicken",
+    "coursename": "Karri",
     "courseid": 9,
     "workshopid": "3696345422",
     "ckznubtier": 4,
@@ -1002,7 +1002,7 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "Karri",
+    "coursename": "leetly",
     "courseid": 10,
     "workshopid": "3696345422",
     "ckznubtier": 4,
@@ -1013,7 +1013,7 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "leetly",
+    "coursename": "makis",
     "courseid": 11,
     "workshopid": "3696345422",
     "ckznubtier": 4,
@@ -1024,7 +1024,7 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "makis",
+    "coursename": "Higgs",
     "courseid": 12,
     "workshopid": "3696345422",
     "ckznubtier": 4,
@@ -1035,7 +1035,7 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "Higgs",
+    "coursename": "Alco",
     "courseid": 13,
     "workshopid": "3696345422",
     "ckznubtier": 4,
@@ -1046,7 +1046,7 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "Alco",
+    "coursename": "reddie",
     "courseid": 14,
     "workshopid": "3696345422",
     "ckznubtier": 4,
@@ -1057,36 +1057,25 @@
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "reddie",
+    "coursename": "benz",
     "courseid": 15,
     "workshopid": "3696345422",
     "ckznubtier": 4,
-    "ckzprotier": 0,
+    "ckzprotier": 4,
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_communitybhop_15.jpg"
   },
   {
     "mapname": "kz_communitybhop",
-    "coursename": "benz",
-    "courseid": 16,
-    "workshopid": "3696345422",
-    "ckznubtier": 4,
-    "ckzprotier": 4,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_communitybhop_16.jpg"
-  },
-  {
-    "mapname": "kz_communitybhop",
     "coursename": "jord",
-    "courseid": 17,
+    "courseid": 16,
     "workshopid": "3696345422",
     "ckznubtier": 4,
     "ckzprotier": 0,
     "vnlnubtier": 0,
     "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_communitybhop_17.jpg"
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_communitybhop_16.jpg"
   },
   {
     "mapname": "kz_communityblock",
