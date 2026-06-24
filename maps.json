@@ -1629,7 +1629,7 @@
   },
   {
     "mapname": "kz_foundation",
-    "coursename": "termius",
+    "coursename": "terminus",
     "courseid": 1,
     "workshopid": "3536739581",
     "ckznubtier": 3,
@@ -2718,7 +2718,7 @@
   },
   {
     "mapname": "kz_kreedzune",
-    "coursename": "kz_kreedzune",
+    "coursename": "Kreedzune",
     "courseid": 1,
     "workshopid": "3743714445",
     "ckznubtier": 2,
@@ -4819,7 +4819,7 @@
   },
   {
     "mapname": "kz_sxb2_onlyslide",
-    "coursename": "Bonus1",
+    "coursename": "Bonus",
     "courseid": 2,
     "workshopid": "3370381464",
     "ckznubtier": 4,
