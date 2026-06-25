@@ -3272,9 +3272,9 @@
     "courseid": 1,
     "workshopid": "3745801456",
     "ckznubtier": 1,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 2,
+    "vnlnubtier": 1,
+    "vnlprotier": 2,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_moss.jpg"
   },
   {
@@ -4779,7 +4779,7 @@
     "courseid": 1,
     "workshopid": "3357361972",
     "ckznubtier": 5,
-    "ckzprotier": 5,
+    "ckzprotier": 6,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_sxb2_isbhop.jpg"
