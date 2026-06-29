@@ -566,9 +566,9 @@
     "courseid": 1,
     "workshopid": "3428921927",
     "ckznubtier": 3,
-    "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 4,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bigcastle.jpg"
   },
   {
