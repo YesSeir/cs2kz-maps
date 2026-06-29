@@ -93,7 +93,7 @@
     "courseid": 1,
     "workshopid": "3609128359",
     "ckznubtier": 4,
-    "ckzprotier": 0,
+    "ckzprotier": 5,
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_152concretewalls.jpg"
@@ -104,9 +104,9 @@
     "courseid": 1,
     "workshopid": "3332836301",
     "ckznubtier": 2,
-    "ckzprotier": 0,
+    "ckzprotier": 4,
     "vnlnubtier": 3,
-    "vnlprotier": 0,
+    "vnlprotier": 6,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_16pillars.jpg"
   },
   {
@@ -116,8 +116,8 @@
     "workshopid": "3360229091",
     "ckznubtier": 3,
     "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 5,
+    "vnlprotier": 5,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_2fast.jpg"
   },
   {
@@ -126,9 +126,9 @@
     "courseid": 1,
     "workshopid": "3451061007",
     "ckznubtier": 3,
-    "ckzprotier": 0,
+    "ckzprotier": 5,
     "vnlnubtier": 6,
-    "vnlprotier": 0,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_adv_cursedjourney.jpg"
   },
   {
@@ -149,8 +149,8 @@
     "workshopid": "3462311938",
     "ckznubtier": 5,
     "ckzprotier": 5,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_aether_fix.jpg"
   },
   {
@@ -159,9 +159,9 @@
     "courseid": 1,
     "workshopid": "3466257543",
     "ckznubtier": 3,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 4,
+    "vnlnubtier": 4,
+    "vnlprotier": 6,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_after_agitation_v2.jpg"
   },
   {
@@ -170,9 +170,9 @@
     "courseid": 1,
     "workshopid": "3449771402",
     "ckznubtier": 6,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 6,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_afterlife.jpg"
   },
   {
@@ -192,9 +192,9 @@
     "courseid": 1,
     "workshopid": "3467978154",
     "ckznubtier": 5,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 5,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_alfie.jpg"
   },
   {
@@ -203,9 +203,9 @@
     "courseid": 1,
     "workshopid": "3423925753",
     "ckznubtier": 6,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 6,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_alien_city.jpg"
   },
   {
@@ -227,7 +227,7 @@
     "ckznubtier": 2,
     "ckzprotier": 3,
     "vnlnubtier": 3,
-    "vnlprotier": 4,
+    "vnlprotier": 5,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_alouette_fix.jpg"
   },
   {
@@ -247,7 +247,7 @@
     "courseid": 1,
     "workshopid": "3636272568",
     "ckznubtier": 6,
-    "ckzprotier": 0,
+    "ckzprotier": 6,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_angina.jpg"
@@ -280,7 +280,7 @@
     "courseid": 1,
     "workshopid": "3746453872",
     "ckznubtier": 7,
-    "ckzprotier": 0,
+    "ckzprotier": 7,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_angina_x.jpg"
@@ -379,9 +379,9 @@
     "courseid": 1,
     "workshopid": "3558360812",
     "ckznubtier": 4,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 5,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_banjo.jpg"
   },
   {
@@ -434,9 +434,9 @@
     "courseid": 1,
     "workshopid": "3699338304",
     "ckznubtier": 4,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 4,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_benchmark.jpg"
   },
   {
@@ -512,8 +512,8 @@
     "workshopid": "3231517132",
     "ckznubtier": 3,
     "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 8,
+    "vnlprotier": 8,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_lego_2.jpg"
   },
   {
@@ -534,8 +534,8 @@
     "workshopid": "3450065613",
     "ckznubtier": 3,
     "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 9,
+    "vnlprotier": 9,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_lucid_2.jpg"
   },
   {
@@ -545,8 +545,8 @@
     "workshopid": "3510928293",
     "ckznubtier": 4,
     "ckzprotier": 4,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_nothing_go.jpg"
   },
   {
@@ -555,7 +555,7 @@
     "courseid": 1,
     "workshopid": "3636997995",
     "ckznubtier": 7,
-    "ckzprotier": 0,
+    "ckzprotier": 7,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_slide.jpg"
@@ -566,7 +566,7 @@
     "courseid": 1,
     "workshopid": "3428921927",
     "ckznubtier": 3,
-    "ckzprotier": 0,
+    "ckzprotier": 3,
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bigcastle.jpg"
@@ -775,7 +775,7 @@
     "courseid": 1,
     "workshopid": "3631450661",
     "ckznubtier": 3,
-    "ckzprotier": 0,
+    "ckzprotier": 3,
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cf_slide.jpg"
@@ -785,10 +785,10 @@
     "coursename": "Bonus",
     "courseid": 2,
     "workshopid": "3631450661",
-    "ckznubtier": 3,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckznubtier": 1,
+    "ckzprotier": 1,
+    "vnlnubtier": 1,
+    "vnlprotier": 1,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cf_slide_2.jpg"
   },
   {
@@ -797,7 +797,7 @@
     "courseid": 3,
     "workshopid": "3631450661",
     "ckznubtier": 3,
-    "ckzprotier": 0,
+    "ckzprotier": 3,
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cf_slide_3.jpg"
@@ -807,10 +807,10 @@
     "coursename": "Bonus 3",
     "courseid": 4,
     "workshopid": "3631450661",
-    "ckznubtier": 3,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckznubtier": 1,
+    "ckzprotier": 1,
+    "vnlnubtier": 1,
+    "vnlprotier": 1,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cf_slide_4.jpg"
   },
   {
@@ -4899,7 +4899,7 @@
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3277307618",
-    "ckznubtier": 7,
+    "ckznubtier": 6,
     "ckzprotier": 0,
     "vnlnubtier": 10,
     "vnlprotier": 10,
