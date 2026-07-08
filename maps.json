@@ -2754,10 +2754,10 @@
     "coursename": "Bluefootune",
     "courseid": 2,
     "workshopid": "3743714445",
-    "ckznubtier": 2,
-    "ckzprotier": 3,
-    "vnlnubtier": 4,
-    "vnlprotier": 4,
+    "ckznubtier": 6,
+    "ckzprotier": 8,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_kreedzune_2.jpg"
   },
   {
