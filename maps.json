@@ -873,8 +873,8 @@
     "coursename": "main",
     "courseid": 1,
     "workshopid": "3753577696",
-    "ckznubtier": 0,
-    "ckzprotier": 0,
+    "ckznubtier": 5,
+    "ckzprotier": 6,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_claustrophilia.jpg"
@@ -2750,6 +2750,17 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_kreedzune.jpg"
   },
   {
+    "mapname": "kz_kreedzune",
+    "coursename": "Bluefootune",
+    "courseid": 2,
+    "workshopid": "3743714445",
+    "ckznubtier": 2,
+    "ckzprotier": 3,
+    "vnlnubtier": 4,
+    "vnlprotier": 4,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_kreedzune_2.jpg"
+  },
+  {
     "mapname": "kz_kukkojapallokidutus",
     "coursename": "Main",
     "courseid": 1,
@@ -2913,6 +2924,17 @@
     "vnlnubtier": 3,
     "vnlprotier": 3,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_leviathan.jpg"
+  },
+  {
+    "mapname": "kz_liminal_geode",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3747717986",
+    "ckznubtier": 6,
+    "ckzprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_liminal_geode.jpg"
   },
   {
     "mapname": "kz_lionheart",
@@ -4706,6 +4728,28 @@
     "vnlnubtier": 2,
     "vnlprotier": 3,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_summercliff2.jpg"
+  },
+  {
+    "mapname": "kz_suomi",
+    "coursename": "suomi",
+    "courseid": 1,
+    "workshopid": "3751983122",
+    "ckznubtier": 4,
+    "ckzprotier": 4,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_suomi.jpg"
+  },
+  {
+    "mapname": "kz_suomi",
+    "coursename": "bonus",
+    "courseid": 2,
+    "workshopid": "3751983122",
+    "ckznubtier": 3,
+    "ckzprotier": 3,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_suomi_2.jpg"
   },
   {
     "mapname": "kz_superstructure",
