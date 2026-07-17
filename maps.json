@@ -550,6 +550,17 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_lucid_2.jpg"
   },
   {
+    "mapname": "kz_bhop_majka",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3764093804",
+    "ckznubtier": 4,
+    "ckzprotier": 4,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_majka.jpg"
+  },
+  {
     "mapname": "kz_bhop_nothing_go",
     "coursename": "Main",
     "courseid": 1,
@@ -1573,6 +1584,17 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_ehcivec_final.jpg"
   },
   {
+    "mapname": "kz_engram",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3759997670",
+    "ckznubtier": 5,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_engram.jpg"
+  },
+  {
     "mapname": "kz_epiphany_v2",
     "coursename": "Main",
     "courseid": 1,
@@ -1826,7 +1848,7 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_grotto_4.jpg"
   },
   {
-    "mapname": "kz_gus_cs2",
+    "mapname": "kz_spy",
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3082144971",
@@ -1834,7 +1856,7 @@
     "ckzprotier": 0,
     "vnlnubtier": 10,
     "vnlprotier": 10,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_gus_cs2.jpg"
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_spy.jpg"
   },
   {
     "mapname": "kz_haki_v2",
@@ -1857,6 +1879,17 @@
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_haste.jpg"
+  },
+  {
+    "mapname": "kz_hb_kuu",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3764764383",
+    "ckznubtier": 4,
+    "ckzprotier": 4,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_hb_kuu.jpg"
   },
   {
     "mapname": "kz_haste",
