@@ -4609,28 +4609,6 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_slide_svn_extreme.jpg"
   },
   {
-    "mapname": "kz_slide_wasteland",
-    "coursename": "Main",
-    "courseid": 1,
-    "workshopid": "3730109782",
-    "ckznubtier": 6,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_slide_wasteland.jpg"
-  },
-  {
-    "mapname": "kz_slide_wasteland",
-    "coursename": "Bonus2",
-    "courseid": 2,
-    "workshopid": "3730109782",
-    "ckznubtier": 6,
-    "ckzprotier": 6,
-    "vnlnubtier": 10,
-    "vnlprotier": 10,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_slide_wasteland_2.jpg"
-  },
-  {
     "mapname": "kz_slidebober",
     "coursename": "Main",
     "courseid": 1,
