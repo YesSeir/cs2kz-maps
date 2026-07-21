@@ -99,17 +99,6 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_11735.jpg"
   },
   {
-    "mapname": "kz_152concretewalls",
-    "coursename": "Main",
-    "courseid": 1,
-    "workshopid": "3609128359",
-    "ckznubtier": 4,
-    "ckzprotier": 5,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_152concretewalls.jpg"
-  },
-  {
     "mapname": "kz_16pillars",
     "coursename": "Main",
     "courseid": 1,
@@ -885,7 +874,7 @@
     "courseid": 1,
     "workshopid": "3753577696",
     "ckznubtier": 5,
-    "ckzprotier": 6,
+    "ckzprotier": 0,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_claustrophilia.jpg"
@@ -1670,17 +1659,6 @@
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_forgotten_2.jpg"
-  },
-  {
-    "mapname": "kz_foundation",
-    "coursename": "terminus",
-    "courseid": 1,
-    "workshopid": "3536739581",
-    "ckznubtier": 3,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_foundation.jpg"
   },
   {
     "mapname": "kz_func_detail",
