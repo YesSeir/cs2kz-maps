@@ -4147,17 +4147,6 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_refurinfunflay.jpg"
   },
   {
-    "mapname": "kz_remnant",
-    "coursename": "kz_remnant",
-    "courseid": 1,
-    "workshopid": "3698113502",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_remnant.jpg"
-  },
-  {
     "mapname": "kz_retreat",
     "coursename": "Main",
     "courseid": 1,
