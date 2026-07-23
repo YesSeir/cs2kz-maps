@@ -1,3 +1,9 @@
+### 🖼️ Maplist
+
+Online maplist generator you can find here:
+
+- [cs2kz-maps](https://yesseir.github.io/cs2kz-maps/)
+
 ### 🖼️ Access to images
 
 Each image is available via a direct link:
