@@ -1,4 +1,4 @@
-### 🖼️ Maplist
+### Maplist
 
 Online maplist generator you can find here:
 
