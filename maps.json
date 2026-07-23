@@ -1837,6 +1837,17 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_grotto_4.jpg"
   },
   {
+    "mapname": "kz_sc_ruins",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3767757448",
+    "ckznubtier": 5,
+    "ckzprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_sc_ruins.jpg"
+  },
+  {
     "mapname": "kz_spy",
     "coursename": "Main",
     "courseid": 1,
@@ -5454,6 +5465,28 @@
     "vnlnubtier": 0,
     "vnlprotier": 0,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_xc_rocks_2.jpg"
+  },
+  {
+    "mapname": "kz_xiaobitu",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3769664404",
+    "ckznubtier": 4,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_xiaobitu.jpg"
+  },
+  {
+    "mapname": "kz_xiaobitu",
+    "coursename": "Bonus",
+    "courseid": 2,
+    "workshopid": "3769664404",
+    "ckznubtier": 3,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_xiaobitu_2.jpg"
   },
   {
     "mapname": "kz_xmas2023",
