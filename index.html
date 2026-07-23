@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Maplist</title>
+  <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font: 15px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: #0a0a0a;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #333;
+      border-radius: 8px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+
+    .app-header {
+      background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+      border-bottom: 1px solid #333;
+      padding: 18px 28px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+    .app-header h1 {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -.01em;
+      color: #ccc;
+    }
+    .app-header .sub {
+      font-size: 13px;
+      color: #888;
+      margin-left: 6px;
+      font-weight: 400;
+    }
+
+    .app-main {
+      flex: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 24px 28px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 340px minmax(400px, 600px);
+      gap: 24px;
+      align-items: stretch;
+      justify-content: center;
+    }
+    @media (max-width: 820px) {
+      .app-main {
+        grid-template-columns: 1fr;
+        padding: 16px;
+        align-items: start;
+        justify-content: stretch;
+      }
+      .app-header {
+        padding: 14px 18px;
+      }
+      .app-header h1 {
+        font-size: 18px;
+      }
+    }
+
+    .card {
+      background: #161616;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border: 1px solid #2a2a2a;
+      border-radius: 16px;
+      padding: 20px 22px;
+      box-shadow: 0 8px 32px rgba(0, 0, 0, .6);
+      transition: border-color .2s;
+    }
+    .card:hover {
+      border-color: #3a3a3a;
+    }
+    .card-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: #888;
+      margin-bottom: 16px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .card-title .dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #666;
+    }
+
+    .field {
+      margin-bottom: 18px;
+    }
+    .field:last-child {
+      margin-bottom: 0;
+    }
+    .field>label {
+      display: block;
+      font-size: 13px;
+      color: #888;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+
+    .seg {
+      display: inline-flex;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+    .seg button {
+      background: none;
+      border: none;
+      color: #888;
+      padding: 6px 16px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all .15s;
+    }
+    .seg button.on {
+      background: #444;
+      color: #fff;
+      box-shadow: 0 0 20px rgba(255, 255, 255, .05);
+    }
+    .seg button:not(.on):hover {
+      color: #ccc;
+    }
+
+    .tiers {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding-right: 4px;
+    }
+    .tier-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 6px 4px 4px;
+      border-radius: 8px;
+      cursor: pointer;
+      user-select: none;
+      transition: background .12s;
+    }
+    .tier-row:hover {
+      background: rgba(255, 255, 255, .04);
+    }
+    .tier-row input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      accent-color: #888;
+      cursor: pointer;
+      flex: none;
+      margin: 0;
+    }
+    .tier-row .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      flex: none;
+      box-shadow: 0 0 6px rgba(0, 0, 0, .3);
+    }
+    .tier-row .tier-label {
+      flex: 1;
+      font-size: 14px;
+    }
+    .tier-row .cnt {
+      color: #888;
+      font-size: 12px;
+      min-width: 20px;
+      text-align: right;
+    }
+
+    .card#output {
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+    .out-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px 14px;
+      margin-bottom: 14px;
+      flex-shrink: 0;
+    }
+    .out-header .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex: 1;
+    }
+    .out-header .left h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #ccc;
+      margin: 0;
+    }
+    .out-header .count {
+      color: #aaa;
+      font-weight: 600;
+      font-size: 14px;
+      background: rgba(255, 255, 255, .05);
+      padding: 2px 12px;
+      border-radius: 20px;
+      border: 1px solid #333;
+    }
+    .out-header .actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .btn {
+      background: rgba(255, 255, 255, .05);
+      border: 1px solid #333;
+      color: #ccc;
+      padding: 6px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 500;
+      transition: all .15s;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+    .btn:hover {
+      background: rgba(255, 255, 255, .1);
+      border-color: #555;
+    }
+    .btn:active {
+      transform: scale(.97);
+    }
+
+    .format-toggle {
+      display: inline-flex;
+      background: #1a1a1a;
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .format-toggle button {
+      background: none;
+      border: none;
+      color: #888;
+      padding: 4px 14px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 12px;
+      font-weight: 500;
+      transition: all .15s;
+    }
+    .format-toggle button.on {
+      background: #444;
+      color: #fff;
+    }
+    .format-toggle button:not(.on):hover {
+      color: #ccc;
+    }
+
+    textarea {
+      width: 100%;
+      flex: 1;
+      min-height: 200px;
+      background: #111;
+      border: 1px solid #2a2a2a;
+      border-radius: 12px;
+      color: #ddd;
+      padding: 14px 16px;
+      font: 13px/1.6 ui-monospace, 'SF Mono', Consolas, monospace;
+      resize: vertical;
+      overflow: auto;
+      outline: none;
+      transition: border .2s;
+      scrollbar-width: thin;
+      scrollbar-color: #333 transparent;
+    }
+    textarea:focus {
+      border-color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .out-header {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .out-header .left {
+        flex-wrap: wrap;
+      }
+      .out-header .actions {
+        flex-wrap: wrap;
+      }
+      .format-toggle button {
+        padding: 4px 10px;
+        font-size: 11px;
+      }
+      .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+      .card {
+        padding: 14px 16px;
+      }
+    }
+
+    .app-main {
+      animation: fadeUp .4s ease-out;
+    }
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    #stateBlock {
+      display: block;
+    }
+
+    #sourceFilter .server-btn {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="app-header">
+    <div>
+      <h3>Maplist</h1>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section class="card" id="controls">
+      <div class="field">
+        <label>Gamemode</label>
+        <div class="seg" id="mode">
+          <button data-v="classic" class="on">Classic</button>
+          <button data-v="vanilla">Vanilla</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Type</label>
+        <div class="seg" id="basis">
+          <button data-v="nub_tier" class="on">Overall</button>
+          <button data-v="pro_tier">PRO</button>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>Tiers</label>
+        <div class="tiers" id="tiers"></div>
+      </div>
+
+      <div class="field">
+        <label>Source</label>
+        <div class="seg" id="sourceFilter">
+          <button data-v="global" class="on">Global</button>
+          <button data-v="everything">Everything</button>
+          <button data-v="server" class="server-btn">Server</button>
+        </div>
+      </div>
+
+      <div class="field" id="stateBlock">
+        <label>State</label>
+        <div class="seg" id="stateFilter">
+          <button data-v="approved" class="on">Approved</button>
+          <button data-v="invalid">Invalid</button>
+        </div>
+      </div>
+
+      <div class="field" id="tierTagBlock">
+        <label>Category</label>
+        <div class="seg" id="tierTagToggle">
+          <button data-v="none" class="on">None</button>
+          <button data-v="category">Category</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card" id="output">
+      <div class="out-header">
+        <div class="left">
+          <h2>Maplist</h2>
+          <span class="count" id="count">0 maps</span>
+        </div>
+        <div class="actions">
+          <div class="format-toggle" id="formatToggle">
+            <button data-v="plain" class="on">Plain</button>
+            <button data-v="json">JSON</button>
+          </div>
+          <button class="btn" id="copy">📋 Copy</button>
+        </div>
+      </div>
+      <textarea id="out" spellcheck="false"></textarea>
+    </section>
+  </main>
+
+  <script>
+    const API = "https://api.cs2kz.org/maps?limit=500";
+    const JSON_PATH = "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps.json";
+
+    const EXCLUDED_MAPS = new Set([]);
+
+    const TIER_LIST = [
+      { id: "test", label: "Test", color: "#888888" },
+      { id: "very-easy", label: "Very Easy", color: "#4fd18b" },
+      { id: "easy", label: "Easy", color: "#8bd14f" },
+      { id: "medium", label: "Medium", color: "#d1cf4f" },
+      { id: "advanced", label: "Advanced", color: "#d1a24f" },
+      { id: "hard", label: "Hard", color: "#d1774f" },
+      { id: "very-hard", label: "Very Hard", color: "#d14f4f" },
+      { id: "extreme", label: "Extreme", color: "#d14f9e" },
+      { id: "death", label: "Death", color: "#a24fd1" },
+      { id: "unfeasible", label: "Unfeasible", color: "#6f4fd1" }
+    ];
+
+    const TIER_NUM = {
+      "very-easy": 1,
+      "easy": 2,
+      "medium": 3,
+      "advanced": 4,
+      "hard": 5,
+      "very-hard": 6,
+      "extreme": 7,
+      "death": 8,
+      "unfeasible": 9
+    };
+
+    const TIER_LABEL = {
+      "very-easy": "Tier 1",
+      "easy": "Tier 2",
+      "medium": "Tier 3",
+      "advanced": "Tier 4",
+      "hard": "Tier 5",
+      "very-hard": "Tier 6",
+      "extreme": "Tier 7",
+      "death": "Tier 8",
+      "unfeasible": "Tier 9"
+    };
+
+    const state = {
+      mode: "classic",
+      basis: "nub_tier",
+      source: "global",
+      stateFilter: "approved",
+      tiers: new Set(TIER_LIST.map(t => t.id)),
+      tierTag: false,
+      format: "plain",
+    };
+
+    let apiMaps = [];
+    let jsonMaps = [];
+    let allMaps = [];
+    let jsonLoaded = false;
+    let apiLoaded = false;
+
+    const $ = s => document.querySelector(s);
+    const outEl = $("#out");
+    const countEl = $("#count");
+    const tiersContainer = $("#tiers");
+    const tierTagBlock = $("#tierTagBlock");
+    const stateBlock = $("#stateBlock");
+    const sourceFilter = $("#sourceFilter");
+    const serverBtn = sourceFilter.querySelector('.server-btn');
+
+    for (const tier of TIER_LIST) {
+      const row = document.createElement("label");
+      row.className = "tier-row";
+      const isChecked = tier.id !== "unfeasible" ? "checked" : "";
+      row.innerHTML = `
+          <input type="checkbox" data-t="${tier.id}" ${isChecked} />
+          <span class="dot" style="background:${tier.color}"></span>
+          <span class="tier-label">${tier.label}</span>
+          <span class="cnt" data-cnt="${tier.id}"></span>
+        `;
+      tiersContainer.appendChild(row);
+    }
+
+    if (state.tiers.has("unfeasible")) {
+      state.tiers.delete("unfeasible");
+    }
+
+    function toggleStateVisibility() {
+      stateBlock.style.display = (state.source === "global") ? "block" : "none";
+    }
+
+    function toggleCategoryVisibility() {
+      tierTagBlock.style.display = (state.format === "plain") ? "block" : "none";
+    }
+
+    function toggleServerVisibility() {
+      if (state.format === "json") {
+        serverBtn.style.display = "inline-block";
+      } else {
+        serverBtn.style.display = "none";
+        if (state.source === "server") {
+          state.source = "global";
+          sourceFilter.querySelectorAll('button').forEach(b => {
+            b.classList.toggle('on', b.dataset.v === 'global');
+          });
+          toggleStateVisibility();
+          switchDataSource();
+        }
+      }
+    }
+
+    function setupSeg(id, key, valueMap) {
+      const el = $(id);
+      el.addEventListener("click", e => {
+        const btn = e.target.closest("button");
+        if (!btn) return;
+        if (btn === serverBtn && serverBtn.style.display === 'none') return;
+        el.querySelectorAll("button").forEach(b => b.classList.toggle("on", b === btn));
+        state[key] = valueMap[btn.dataset.v];
+        if (key === "source") {
+          toggleStateVisibility();
+          switchDataSource();
+        } else if (key === "format") {
+          toggleCategoryVisibility();
+          toggleServerVisibility();
+          render();
+        } else {
+          render();
+        }
+      });
+    }
+    setupSeg("#mode", "mode", { classic: "classic", vanilla: "vanilla" });
+    setupSeg("#basis", "basis", { nub_tier: "nub_tier", pro_tier: "pro_tier" });
+    setupSeg("#sourceFilter", "source", { global: "global", everything: "everything", server: "server" });
+    setupSeg("#stateFilter", "stateFilter", { approved: "approved", invalid: "invalid" });
+    setupSeg("#tierTagToggle", "tierTag", { none: false, category: true });
+
+    tiersContainer.addEventListener("change", e => {
+      const t = e.target.dataset.t;
+      if (!t) return;
+      e.target.checked ? state.tiers.add(t) : state.tiers.delete(t);
+      render();
+    });
+
+    const fmtToggle = $("#formatToggle");
+    fmtToggle.addEventListener("click", e => {
+      const btn = e.target.closest("button");
+      if (!btn) return;
+      fmtToggle.querySelectorAll("button").forEach(b => b.classList.toggle("on", b === btn));
+      state.format = btn.dataset.v;
+      toggleCategoryVisibility();
+      toggleServerVisibility();
+      render();
+    });
+
+    function switchDataSource() {
+      if (state.source === "global") {
+        if (apiLoaded) {
+          allMaps = apiMaps;
+        } else {
+          allMaps = [];
+        }
+        render();
+      } else if (state.source === "everything") {
+        if (jsonLoaded) {
+          allMaps = jsonMaps;
+        } else {
+          allMaps = [];
+          jsonLoaded = true;
+        }
+        render();
+      } else {
+        if (apiLoaded && jsonLoaded) {
+          render();
+        } else {
+          allMaps = [];
+          render();
+        }
+      }
+    }
+
+    function matches(m) {
+      if (EXCLUDED_MAPS.has(m.workshop_id)) return false;
+      if (state.source === "global") {
+        if (state.stateFilter === "approved" && m.state !== "approved") return false;
+        if (state.stateFilter === "invalid" && m.state !== "invalid") return false;
+      }
+      const courses = m.courses || [];
+      for (const course of courses) {
+        const f = course.filters && course.filters[state.mode];
+        if (!f) continue;
+        if (f.state !== "ranked") continue;
+        const tierKey = f[state.basis];
+        if (tierKey) {
+          if (TIER_NUM[tierKey] !== undefined && state.tiers.has(tierKey)) return true;
+        } else {
+          if (state.tiers.has("test")) return true;
+        }
+      }
+      return false;
+    }
+
+    function selected() {
+      if (state.source === "global" || state.source === "everything") {
+        return allMaps.filter(matches).sort((a, b) => a.name.localeCompare(b.name));
+      }
+      return [];
+    }
+
+    function getMapTier(m) {
+      const courses = m.courses || [];
+      for (const course of courses) {
+        const f = course.filters && course.filters[state.mode];
+        if (f && f[state.basis]) {
+          return f[state.basis];
+        }
+      }
+      return null;
+    }
+
+    function getMapTierNum(m) {
+      const t = getMapTier(m);
+      return t ? TIER_NUM[t] : null;
+    }
+
+    function getMapGroupName(m) {
+      const t = getMapTier(m);
+      if (t && TIER_LABEL[t]) return TIER_LABEL[t];
+      return "Test";
+    }
+
+    function buildPlain(list) {
+      const lines = [];
+      for (const m of list) {
+        if (state.tierTag) {
+          const num = getMapTierNum(m);
+          const label = num ? `T${num}` : "Test";
+          lines.push(`${m.name} (${label}):${m.workshop_id}`);
+        } else {
+          lines.push(`${m.name}:${m.workshop_id}`);
+        }
+      }
+      return lines.join("\n");
+    }
+
+    function buildServerJson() {
+      const approvedGlobalNames = new Set(apiMaps.filter(m => m.state === "approved").map(m => m.name));
+      const approvedGlobal = apiMaps.filter(m => m.state === "approved" && matches(m));
+      const matchedJson = jsonMaps.filter(matches);
+
+      const groups = {};
+      for (const m of approvedGlobal) {
+        const groupName = getMapGroupName(m);
+        if (!groups[groupName]) {
+          groups[groupName] = {};
+        }
+        groups[groupName][m.name] = String(m.workshop_id);
+      }
+
+      const sortedKeys = Object.keys(groups).sort((a, b) => {
+        if (a === "Test") return 1;
+        if (b === "Test") return -1;
+        const na = parseInt(a.replace("Tier ", ""), 10);
+        const nb = parseInt(b.replace("Tier ", ""), 10);
+        return na - nb;
+      });
+      const result = {};
+      for (const key of sortedKeys) {
+        result[key] = [groups[key]];
+      }
+
+      const notGlobalObj = {};
+      for (const m of matchedJson) {
+        if (!approvedGlobalNames.has(m.name)) {
+          const num = getMapTierNum(m);
+          const label = num ? `Tier ${num}` : "Test";
+          const key = `${m.name} (${label})`;
+          notGlobalObj[key] = String(m.workshop_id);
+        }
+      }
+
+      const sortedNotGlobalKeys = Object.keys(notGlobalObj).sort();
+      const sortedNotGlobal = {};
+      for (const k of sortedNotGlobalKeys) {
+        sortedNotGlobal[k] = notGlobalObj[k];
+      }
+      if (Object.keys(sortedNotGlobal).length > 0) {
+        result["Not Global"] = [sortedNotGlobal];
+      }
+
+      return JSON.stringify(result, null, 2);
+    }
+
+    function buildJson(list) {
+      const groups = {};
+      for (const m of list) {
+        const groupName = getMapGroupName(m);
+        if (!groups[groupName]) {
+          groups[groupName] = {};
+        }
+        groups[groupName][m.name] = String(m.workshop_id);
+      }
+      const sortedKeys = Object.keys(groups).sort((a, b) => {
+        if (a === "Test") return 1;
+        if (b === "Test") return -1;
+        const na = parseInt(a.replace("Tier ", ""), 10);
+        const nb = parseInt(b.replace("Tier ", ""), 10);
+        return na - nb;
+      });
+      const result = {};
+      for (const key of sortedKeys) {
+        result[key] = [groups[key]];
+      }
+      return JSON.stringify(result, null, 2);
+    }
+
+    function render() {
+      if (state.source === "server") {
+        if (!apiLoaded || !jsonLoaded) {
+          outEl.value = "";
+          countEl.textContent = "0 maps";
+          updateCounts();
+          return;
+        }
+        const output = buildServerJson();
+        outEl.value = output;
+        const allMerged = new Map();
+        for (const m of apiMaps) {
+          if (matches(m)) allMerged.set(m.name, m);
+        }
+        for (const m of jsonMaps) {
+          if (matches(m)) allMerged.set(m.name, m);
+        }
+        countEl.textContent = `${allMerged.size} map${allMerged.size === 1 ? "" : "s"}`;
+        updateCounts();
+        return;
+      }
+
+      if (!allMaps.length) {
+        outEl.value = "";
+        countEl.textContent = "0 maps";
+        updateCounts();
+        return;
+      }
+      const list = selected();
+      const output = state.format === "plain" ? buildPlain(list) : buildJson(list);
+      outEl.value = output;
+      countEl.textContent = `${list.length} map${list.length === 1 ? "" : "s"}`;
+      updateCounts();
+    }
+
+    function updateCounts() {
+      let base = [];
+      if (state.source === "server") {
+        if (apiLoaded && jsonLoaded) {
+          const combined = new Map();
+          for (const m of apiMaps) {
+            if (matches(m)) combined.set(m.name, m);
+          }
+          for (const m of jsonMaps) {
+            if (matches(m)) combined.set(m.name, m);
+          }
+          base = [...combined.values()];
+        }
+      } else {
+        base = allMaps.filter(m => {
+          if (state.source === "global") {
+            if (state.stateFilter === "approved" && m.state !== "approved") return false;
+            if (state.stateFilter === "invalid" && m.state !== "invalid") return false;
+          }
+          return true;
+        });
+      }
+
+      for (const tier of TIER_LIST) {
+        const id = tier.id;
+        const n = base.filter(m => {
+          if (id === "test") {
+            for (const c of m.courses) {
+              const f = c.filters && c.filters[state.mode];
+              if (f && f.state === "ranked" && f[state.basis]) {
+                return false;
+              }
+            }
+            return true;
+          } else {
+            for (const c of m.courses) {
+              const f = c.filters && c.filters[state.mode];
+              if (f && f.state === "ranked" && f[state.basis] === id) {
+                return true;
+              }
+            }
+            return false;
+          }
+        }).length;
+        const el = tiersContainer.querySelector(`[data-cnt="${id}"]`);
+        if (el) el.textContent = n || "";
+      }
+    }
+
+    $("#copy").onclick = async () => {
+      await navigator.clipboard.writeText(outEl.value);
+      const b = $("#copy");
+      const orig = b.textContent;
+      b.textContent = "✓ Copied!";
+      setTimeout(() => b.textContent = orig, 1400);
+    };
+
+    function dedupe(list) {
+      const byId = new Map();
+      for (const m of list) {
+        const prev = byId.get(m.workshop_id);
+        if (!prev || (m.state === "approved" && prev.state !== "approved")) {
+          byId.set(m.workshop_id, m);
+        }
+      }
+      return [...byId.values()];
+    }
+
+    function convertJsonToApi(jsonArray) {
+      const mapById = new Map();
+      for (const entry of jsonArray) {
+        if (entry.courseid && entry.courseid !== 1) continue;
+        const wid = entry.workshopid;
+        if (EXCLUDED_MAPS.has(wid)) continue;
+        if (!mapById.has(wid)) {
+          mapById.set(wid, {
+            name: entry.mapname,
+            workshop_id: wid,
+            state: "approved",
+            courses: []
+          });
+        }
+        const mapObj = mapById.get(wid);
+        const filters = {};
+        const modes = ['vanilla', 'classic'];
+        const tierFields = {
+          vanilla: { nub: 'vnlnubtier', pro: 'vnlprotier' },
+          classic: { nub: 'ckznubtier', pro: 'ckzprotier' }
+        };
+        for (const mode of modes) {
+          const nub = entry[tierFields[mode].nub];
+          const pro = entry[tierFields[mode].pro];
+          if (nub === 0 && pro === 0) {
+            filters[mode] = { state: "ranked" };
+          } else if (nub > 0 || pro > 0) {
+            const nubTier = (nub > 0 && nub <= 9) ? TIER_LIST.find(t => TIER_NUM[t.id] === nub)?.id : null;
+            const proTier = (pro > 0 && pro <= 9) ? TIER_LIST.find(t => TIER_NUM[t.id] === pro)?.id : null;
+            if (nubTier || proTier) {
+              filters[mode] = { state: "ranked" };
+              if (nubTier) filters[mode].nub_tier = nubTier;
+              if (proTier) filters[mode].pro_tier = proTier;
+            }
+          }
+        }
+        if (Object.keys(filters).length > 0) {
+          mapObj.courses.push({ filters });
+        }
+      }
+      return [...mapById.values()].filter(m => m.courses.length > 0);
+    }
+
+    function loadApiMaps() {
+      fetch(API)
+        .then(r => r.json())
+        .then(data => {
+          apiMaps = dedupe(data.values || []).filter(m => !EXCLUDED_MAPS.has(m.workshop_id));
+          apiLoaded = true;
+          if (state.source === "global" || state.source === "server") {
+            if (state.source === "global") {
+              allMaps = apiMaps;
+            }
+            render();
+          }
+        })
+        .catch(err => {
+          console.error('API load error:', err);
+          apiLoaded = false;
+        });
+    }
+
+    function loadJsonMaps() {
+      fetch(JSON_PATH)
+        .then(r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}`);
+          return r.json();
+        })
+        .then(data => {
+          jsonMaps = convertJsonToApi(data);
+          jsonLoaded = true;
+          if (state.source === "everything" || state.source === "server") {
+            if (state.source === "everything") {
+              allMaps = jsonMaps;
+            }
+            render();
+          }
+        })
+        .catch(err => {
+          if (state.source === "everything" || state.source === "server") {
+            jsonMaps = [];
+            jsonLoaded = true;
+            render();
+          } else {
+            console.warn('maps.json not loaded (not used)');
+          }
+        });
+    }
+
+    toggleStateVisibility();
+    toggleCategoryVisibility();
+    toggleServerVisibility();
+    loadApiMaps();
+    loadJsonMaps();
+  </script>
+</body>
+</html>
