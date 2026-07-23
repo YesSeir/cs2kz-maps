@@ -1,5 +1,137 @@
 [
   {
+    "mapname": "kz_cryoheaven",
+    "coursename": "main",
+    "courseid": 1,
+    "workshopid": "3768942476",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cryoheaven.jpg"
+  },
+  {
+    "mapname": "kz_cruise",
+    "coursename": "Cruise",
+    "courseid": 1,
+    "workshopid": "3755483837",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_cruise.jpg"
+  },
+  {
+    "mapname": "kz_asteroid_beach",
+    "coursename": "kz_asteroid_beach",
+    "courseid": 1,
+    "workshopid": "3760078813",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_asteroid_beach.jpg"
+  },
+  {
+    "mapname": "kz_wishyouwerehere",
+    "coursename": "Greetings From",
+    "courseid": 1,
+    "workshopid": "3759885779",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_wishyouwerehere.jpg"
+  },
+  {
+    "mapname": "kz_santorini",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3759851393",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_santorini.jpg"
+  },
+  {
+    "mapname": "kz_maldives",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3759771524",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_maldives.jpg"
+  },
+  {
+    "mapname": "kz_big4",
+    "coursename": "highropes",
+    "courseid": 1,
+    "workshopid": "3767113515",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_big4.jpg"
+  },
+  {
+    "mapname": "kz_calm",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3766931879",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_calm.jpg"
+  },
+  {
+    "mapname": "kz_forest_retreat",
+    "coursename": "Forest Retreat",
+    "courseid": 1,
+    "workshopid": "3766903085",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_forest_retreat.jpg"
+  },
+  {
+    "mapname": "kz_sc_surf",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3766436460",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_sc_surf.jpg"
+  },
+  {
+    "mapname": "kz_scuba",
+    "coursename": "Scuba Lesson",
+    "courseid": 1,
+    "workshopid": "3763606466",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_scuba.jpg"
+  },
+  {
+    "mapname": "kz_xerox",
+    "coursename": "Main",
+    "courseid": 1,
+    "workshopid": "3762109925",
+    "ckznubtier": 0,
+    "ckzprotier": 0,
+    "vnlnubtier": 0,
+    "vnlprotier": 0,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_xerox.jpg"
+  },
+  {
     "mapname": "bkz_evanstep",
     "coursename": "Main",
     "courseid": 1,
