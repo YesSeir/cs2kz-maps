@@ -1,4 +1,4 @@
-[ 
+[
   {
     "mapname": "bkz_evanstep",
     "coursename": "Main",
@@ -225,7 +225,7 @@
     "courseid": 1,
     "workshopid": "3636272568",
     "ckznubtier": 6,
-    "ckzprotier": 6,
+    "ckzprotier": 7,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_angina.jpg"
@@ -246,8 +246,8 @@
     "coursename": "b2",
     "courseid": 3,
     "workshopid": "3636272568",
-    "ckznubtier": 3,
-    "ckzprotier": 3,
+    "ckznubtier": 2,
+    "ckzprotier": 2,
     "vnlnubtier": 10,
     "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_angina_3.jpg"
@@ -532,10 +532,10 @@
     "coursename": "Main",
     "courseid": 1,
     "workshopid": "3764093804",
-    "ckznubtier": 4,
+    "ckznubtier": 3,
     "ckzprotier": 4,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_bhop_majka.jpg"
   },
   {
@@ -1051,8 +1051,8 @@
     "workshopid": "3755515861",
     "ckznubtier": 4,
     "ckzprotier": 5,
-    "vnlnubtier": 1,
-    "vnlprotier": 1,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_communitybhop_8.jpg"
   },
   {
@@ -1666,10 +1666,21 @@
     "courseid": 1,
     "workshopid": "3759997670",
     "ckznubtier": 5,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 6,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_engram.jpg"
+  },
+  {
+    "mapname": "kz_engram",
+    "coursename": "secondary",
+    "courseid": 2,
+    "workshopid": "3759997670",
+    "ckznubtier": 2,
+    "ckzprotier": 3,
+    "vnlnubtier": 3,
+    "vnlprotier": 3,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_engram_2.jpg"
   },
   {
     "mapname": "kz_epiphany_v2",
@@ -2018,9 +2029,9 @@
     "courseid": 1,
     "workshopid": "3776801864",
     "ckznubtier": 6,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 6,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_hb_wangdefa.jpg"
   },
   {
@@ -3355,15 +3366,15 @@
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_mediumcastle_5.jpg"
   },
   {
-    "mapname": "kz_mescaline_f",
-    "coursename": "Main",
+    "mapname": "kz_mescaline",
+    "coursename": "Mescaline",
     "courseid": 1,
-    "workshopid": "3545499100",
-    "ckznubtier": 4,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
-    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_mescaline_f.jpg"
+    "workshopid": "3781516256",
+    "ckznubtier": 3,
+    "ckzprotier": 4,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
+    "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_mescaline.jpg"
   },
   {
     "mapname": "kz_mess",
@@ -3950,12 +3961,12 @@
   },
   {
     "mapname": "kz_phamous",
-    "coursename": "Main",
+    "coursename": "main",
     "courseid": 1,
-    "workshopid": "3778551358",
-    "ckznubtier": 2,
+    "workshopid": "3780087724",
+    "ckznubtier": 1,
     "ckzprotier": 2,
-    "vnlnubtier": 2,
+    "vnlnubtier": 1,
     "vnlprotier": 2,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_phamous.jpg"
   },
@@ -4483,7 +4494,7 @@
     "workshopid": "3718800235",
     "ckznubtier": 2,
     "ckzprotier": 2,
-    "vnlnubtier": 3,
+    "vnlnubtier": 4,
     "vnlprotier": 4,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_silly_metamodernity_2.jpg"
   },
@@ -4493,9 +4504,9 @@
     "courseid": 3,
     "workshopid": "3718800235",
     "ckznubtier": 5,
-    "ckzprotier": 0,
-    "vnlnubtier": 0,
-    "vnlprotier": 0,
+    "ckzprotier": 5,
+    "vnlnubtier": 10,
+    "vnlprotier": 10,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_silly_metamodernity_3.jpg"
   },
   {
@@ -4504,9 +4515,9 @@
     "courseid": 4,
     "workshopid": "3718800235",
     "ckznubtier": 3,
-    "ckzprotier": 0,
-    "vnlnubtier": 5,
-    "vnlprotier": 0,
+    "ckzprotier": 4,
+    "vnlnubtier": 6,
+    "vnlprotier": 7,
     "image": "https://raw.githubusercontent.com/YesSeir/cs2kz-maps/main/maps/kz_silly_metamodernity_4.jpg"
   },
   {
@@ -5127,7 +5138,7 @@
   },
   {
     "mapname": "kz_toofaded",
-    "coursename": "Main",
+    "coursename": "Too Faded",
     "courseid": 1,
     "workshopid": "3678967447",
     "ckznubtier": 5,
